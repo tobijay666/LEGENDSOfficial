@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 06, 2021 at 08:44 PM
+-- Generation Time: Nov 12, 2021 at 10:33 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -40,19 +40,16 @@ CREATE TABLE `ordertable` (
 --
 
 INSERT INTO `ordertable` (`order_id`, `p_id`, `order_date`, `total`, `CName`) VALUES
-(1, 1, '2021-11-06', 500, 'Shalini'),
-(2, 1, '2021-11-06', 500, 'Shalini'),
-(3, 1, '2021-11-06', 500, 'Shalini'),
-(4, 2, '2021-11-06', 500, 'Shalini'),
-(5, 1, '2021-11-06', 500, 'Maria'),
-(6, 3, '2021-11-06', 500, 'Maria'),
-(7, 1, '2021-11-06', 500, 'Maria'),
-(8, 0, '0000-00-00', 0, 'Maria'),
-(9, 0, '0000-00-00', 0, 'Maria'),
-(10, 1, '2021-11-06', 500, 'Maria'),
-(11, 1, '2021-11-06', 500, 'Maria'),
-(12, 1, '2021-11-06', 500, 'Maria'),
-(13, 3, '2021-11-06', 500, 'Maria');
+(1, 1, '2021-11-12', 500, 'Shalini'),
+(2, 1, '2021-11-12', 500, 'Shalini'),
+(3, 2, '2021-11-12', 500, 'Shalini'),
+(4, 2, '2021-11-12', 500, 'Shalini'),
+(5, 2, '2021-11-12', 500, 'Shalini'),
+(6, 2, '2021-11-12', 500, 'Shalini'),
+(7, 3, '2021-11-12', 500, 'Shalini'),
+(8, 1, '2021-11-12', 500, 'Shalini'),
+(9, 1, '2021-11-12', 500, 'Shalini'),
+(10, 3, '2021-11-12', 500, 'Shalini');
 
 -- --------------------------------------------------------
 
@@ -73,11 +70,9 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`pID`, `pImg`, `pName`, `pPrice`, `pDesc`) VALUES
-(1, 'shop/product1.jpg', 'product 1 name', 500, 'ABCDEFG'),
-(2, 'shop/product2.jpg', 'product 2 name', 500, 'asdfghjkll'),
-(3, 'shop/product3.jpg', 'product 3 name', 500, 'asdfghjkll'),
-(4, 'shop/product4.jpg', 'product 4 name', 500, 'asdfghjkll'),
-(5, 'shop/product5.jpeg', 'product 5 name', 500, 'asdfghjkll');
+(1, 'shop/product1.jpeg', 'Gun Model 1', 500, 'A perfect toy gun model designed specially for the game LEGENDS. This will make the game more interesting and more fun to play. The toy gun model can be connected to the mobile phone via bluetooth. '),
+(2, 'shop/product2.jpeg', 'Gun Model 2', 500, 'A perfect toy gun model designed specially for the game LEGENDS. This will make the game more interesting and more fun to play. The toy gun model can be connected to the mobile phone via bluetooth. '),
+(3, 'shop/product3.jpeg', 'Gun Model 3', 500, 'A perfect toy gun model designed specially for the game LEGENDS. This will make the game more interesting and more fun to play. The toy gun model can be connected to the mobile phone via bluetooth. ');
 
 -- --------------------------------------------------------
 
@@ -131,7 +126,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `ordertable`
 --
 ALTER TABLE `ordertable`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `product`
